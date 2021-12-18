@@ -1,0 +1,83 @@
+package assignment1;
+import java.util.Scanner;
+
+public class NumericalComputationAndExpression {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		//for personal detail
+		String name;
+		char gender;
+		int age;
+		double adultticketPrice = 55;
+		String location;
+		String destination;
+		String departure;
+		String returndate;
+		double additionalVIP = 100;
+		int ticketType;
+		int numberOfPassengers;
+		
+		
+		
+		
+		System.out.println("Welcome to the Ticket Booking System.");
+		System.out.println();
+		System.out.println("Please Enter Your Personal Detail.");
+		//To ask the user to fill up their personal detail.
+		System.out.println("Enter Your Name:");
+		name = scan.nextLine();
+		
+		System.out.println("Enter Your Age:");
+		age = scan.nextInt();
+		
+		System.out.println("Enter Your Gender:");
+		gender = scan.next().charAt(0);// it will take the first character of the entered word
+		// To ask the user to fill up their booking detail
+		System.out.println("Enter your destination");
+		destination = scan.nextLine();
+		location = scan.nextLine();
+		
+		System.out.println();
+		System.out.println("Please enter your departure and return date");
+		System.out.println();
+		System.out.println("Departure");
+		departure =scan.nextLine();
+		
+		System.out.println("Return");
+		returndate = scan.nextLine();
+		
+		//if user select 0, the vip will be null because 0 * 100 = 0
+		System.out.println("Please select your ticket type :");
+		System.out.println("0.Economy       1. VIP ");
+		ticketType = scan.nextInt();
+		
+		System.out.print("Please input how many passengers you'd like to bring : ");
+		numberOfPassengers = scan.nextInt();
+		
+		double ticketTotalPrice = (adultticketPrice + (ticketType * additionalVIP)) * numberOfPassengers;
+		
+		System.out.println("Your Ticket will be appear soon.");
+		System.out.println();
+		
+		System.out.println("Name : " + name);
+		System.out.println("Age : " + age);
+		System.out.println("Gender : " + gender);
+		System.out.println("Destination : " + location);
+		System.out.println("Departure Date : " + departure);
+		System.out.println("Return date : " + returndate);
+		System.out.println("Number of Passengers : " + numberOfPassengers);
+		System.out.println("Total Payment is : RM" + ticketTotalPrice);
+		
+		System.out.println("Thank,you and Have a Save Journey!");
+		
+	
+		
+		
+		
+		
+	}
+
+}
