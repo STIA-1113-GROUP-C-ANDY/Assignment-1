@@ -1,0 +1,33 @@
+Welcome to the Ticket Booking System.
+
+Please Enter Your Personal Detail.
+Enter Your Name:
+ ANDYSON JUNIS ANAK JAMES
+Enter Your Age:
+20
+Enter Your Gender:
+MALE
+Enter your destination
+PERAK
+
+Please enter your departure and return date
+
+Departure
+18/12/21
+Return
+18/12/21
+Please select your ticket type :
+0.Economy       1. VIP 
+1
+Please input how many passengers you'd like to bring : 4
+Your Ticket will be appear soon.
+
+Name :  ANDYSON JUNIS ANAK JAMES
+Age : 20
+Gender : M
+Destination : PERAK
+Departure Date : 18/12/21
+Return date : 18/12/21
+Number of Passengers : 4
+Total Payment is : RM620.0
+Thank,you and Have a Save Journey!
